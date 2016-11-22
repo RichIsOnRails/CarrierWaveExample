@@ -2,3 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+
+.btn-upload{
+	margin-bottom: 10px;
+}
+
+#resume_attachment{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#resume_attachment + label * {
+	pointer-events: none;
+}
+
+.field_with_errors{
+	display: inline-block;
+}
